@@ -4,112 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction au PHP</title>
+    <title>Les boucles PHP</title>
 </head>
 <body>
 
-<h1>Bievenue dans mon apprentissage sur PHP !</h1>
-    
 <?php
 //-----------------------------------------------------
 // EXO 1
 //-----------------------------------------------------
-$name = " Je m'appelle Hakim" ;
-echo $name ;
+$nombreDeCookies = 0 ;
+for($nombreDeCookies = 0; $nombreDeCookies <= 10; $nombreDeCookies++){
+    echo " $nombreDeCookies ." ;
+}
 ?>
 
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 2
 //-----------------------------------------------------
-$lastname = "Merniz" ;
-$firstname = "Hakim" ;
-$age = 26 ;
-
-echo "Bonjour Monsieur $lastname et bienvenue sur mon site !<br>"  ;
-echo "Votre prénom est : $firstname <br>"  ;
-echo "Et vous êtes âgés de : $age ans" ;
+$butDeGiroud= 0 ;
+$butDeBenzema = 99 ;
+while ($butDeGiroud  <= 20){
+    echo $butDeGiroud * $butDeBenzema ;
+    $butDeGiroud ++;
+}
 ?>
 
 <br>
+<br>
 
-<?php
+<?php 
 //-----------------------------------------------------
 // EXO 3
 //-----------------------------------------------------
-$km = 1 ;
-echo $km ;
+$premiereVariable = 100 ;
+$deuxiemeVariable = 50 ;
+while($premiereVariable >= 10){
+    echo $premiereVariable * $deuxiemeVariable;
+    $premiereVariable --;
+}
 ?>
 
-<?php
-$km += 2 ;
-echo $km ;
-?>
-
-<?php
-$km += 122 ;
-echo $km ;
-?>
-
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 4
 //-----------------------------------------------------
-$unString = "String " ;
-$unInt = 2 ;
-$unFloat = 2.2 ;
-$unBoolean = true ;
-echo $unString ;
-echo $unInt ;
-echo $unFloat ;
-echo $unBoolean ;
+for($i = 1; $i <= 10; $i += $i/2 ) {
+    echo "$i/ ";
+}
 ?>
 
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 5
 //-----------------------------------------------------
-$unDeuxiemeInt = NULL ;
-echo $unDeuxiemeInt ;
-$unDeuxiemeInt = 2 ;
-echo $unDeuxiemeInt ;
+$pas = 1 ;
+for($pas = 1; $pas != 16; $pas ++){
+    echo "On y arrive presque. ";
+}
 ?>
 
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 6
 //-----------------------------------------------------
-echo "Bonjour $name Comment vas-tu ?";
+$pasDeCote = 20 ;
+for($pasDeCote; $pasDeCote >= 1 ; $pasDeCote --){
+    echo "C'est presque bon. " ;
+}
 ?>
 
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 7
 //-----------------------------------------------------
-echo  "Bonjour $lastname $firstname tu as $age ans" ;
+for($i = 1; $i <=100; $i += 15){
+    echo "On tient le bon bout. " ;
+}
 ?>
 
+<br>
 <br>
 
 <?php
 //-----------------------------------------------------
 // EXO 8
 //-----------------------------------------------------
-$premierCalcul = 3 + 4 ;
-$deuxiemeCalcul =  5 * 20 ;
-$troisiemeCalcul = 45 / 5 ;
-
-echo "Le résultat de 3 + 4 est : $premierCalcul ; le résultat de 5 x 20 est : $deuxiemeCalcul ; le résultat de 45 divisé par 5 est : $troisiemeCalcul" ;
+for($i=200; $i >= 0; $i -= 12){
+    echo "Enfin !!!!! " ;
+}
 ?>
 
 </body>
