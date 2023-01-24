@@ -36,9 +36,69 @@ function chaineDeCaractere(string $unMot) :string {
 // EXO 3
 //-----------------------------------------------------
 function conca(string $booba, string $kaaris) :string {
-    return $booba . $kaaris ;
+    echo $booba . $kaaris ;
 }
 ?>
 
+<br>
+
+<?php
+//-----------------------------------------------------
+// EXO 4
+//-----------------------------------------------------
+function number($7,$2) :int {
+    if (7 > 2 ){
+        echo "Le premier nombre est plus grand" ;
+    }
+    else if (7 < 2){
+        echo "Le premier nombre est plus petit ";
+    }
+    else if (7 == 2){
+        echo "Les deux nombres sont identiques ";
+    }
+}
+?>
+
+<br>
+
+<?php
+//-----------------------------------------------------
+// EXO 5
+//-----------------------------------------------------
+function numberString(2, $str){
+    echo 2 . $str ;
+}
+?>
+
+<br>
+
+<?php
+//-----------------------------------------------------
+// EXO 6
+//-----------------------------------------------------
+function threeVar($Hakim, 26, $Merniz) {
+    echo "Bonjour $Hakim $Merniz, tu as 26 ans. ";
+}
+?>
+
+<br>
+
+<?php
+//-----------------------------------------------------
+// EXO 7
+//-----------------------------------------------------
+function proun(26, $gender) {
+
+}
+?>
+
+<br>
+
+<?php
+//-----------------------------------------------------
+// EXO 8
+//-----------------------------------------------------
+
+?>
 </body>
 </html>

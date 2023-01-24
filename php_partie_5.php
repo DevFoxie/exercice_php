@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction au PHP</title>
+    <title>Les Tableaux PHP</title>
 </head>
 
 <body>
-
-    <h1>Bievenue dans mon apprentissage sur PHP !</h1>
 
     <?php
     //-----------------------------------------------------
     // EXO 1
     //-----------------------------------------------------
-    $name = " Je m'appelle Hakim";
-    echo $name;
+    $months = [
+        1 => "Janvier",
+        2 => "Février",
+        3 => "Mars",
+        4 => "Avril",
+        5 => "Mai",
+        6 => "Juin",
+        7 => "Juillet",
+        8 => "Aout",
+        9 => "Septembre",
+        10 => "Octobre",
+        11 => "Novembre",
+        12 => "Décembre",
+    ];
+    echo $months;
     ?>
 
     <br>
@@ -26,13 +37,7 @@
     //-----------------------------------------------------
     // EXO 2
     //-----------------------------------------------------
-    $lastname = "Merniz";
-    $firstname = "Hakim";
-    $age = 26;
-
-    echo "Bonjour Monsieur $lastname et bienvenue sur mon site !<br>";
-    echo "Votre prénom est : $firstname <br>";
-    echo "Et vous êtes âgés de : $age ans";
+    echo $months[3];
     ?>
 
     <br>
@@ -41,18 +46,7 @@
     //-----------------------------------------------------
     // EXO 3
     //-----------------------------------------------------
-    $km = 1;
-    echo $km;
-    ?>
-
-    <?php
-    $km += 2;
-    echo $km;
-    ?>
-
-    <?php
-    $km += 122;
-    echo $km;
+    $months[5];
     ?>
 
     <br>
@@ -61,14 +55,8 @@
     //-----------------------------------------------------
     // EXO 4
     //-----------------------------------------------------
-    $unString = "String ";
-    $unInt = 2;
-    $unFloat = 2.2;
-    $unBoolean = true;
-    echo $unString;
-    echo $unInt;
-    echo $unFloat;
-    echo $unBoolean;
+    $months[8] = "Août";
+    echo $months[8];
     ?>
 
     <br>
@@ -77,10 +65,13 @@
     //-----------------------------------------------------
     // EXO 5
     //-----------------------------------------------------
-    $unDeuxiemeInt = NULL;
-    echo $unDeuxiemeInt;
-    $unDeuxiemeInt = 2;
-    echo $unDeuxiemeInt;
+    $hautsDeFrance = [
+        02 => "Aisne",
+        59 => "Nord",
+        60 => "Oise",
+        62 => "Pas-de-Calais",
+        80 => "Somme",
+    ];
     ?>
 
     <br>
@@ -89,7 +80,7 @@
     //-----------------------------------------------------
     // EXO 6
     //-----------------------------------------------------
-    echo "Bonjour $name Comment vas-tu ?";
+    echo $hautesDeFrance[59];
     ?>
 
     <br>
@@ -98,21 +89,39 @@
     //-----------------------------------------------------
     // EXO 7
     //-----------------------------------------------------
-    echo  "Bonjour $lastname $firstname tu as $age ans";
+    $hautsDeFrance[59] = "Reims";
+    echo $hautsDeFrance ;
+    ?>
+
+<br>
+
+    <?php
+    //-----------------------------------------------------
+    // EXO 8
+    //-----------------------------------------------------
+    foreach ($months as [$id, $mois]){
+        echo $months ;
+    }
+    ?>
+
+<br>
+
+    <?php
+    //-----------------------------------------------------
+    // EXO 9
+    //-----------------------------------------------------
+    var_dump($hautsDeFrance);
     ?>
 
     <br>
 
     <?php
     //-----------------------------------------------------
-    // EXO 8
+    // EXO 10
     //-----------------------------------------------------
-    $premierCalcul = 3 + 4;
-    $deuxiemeCalcul =  5 * 20;
-    $troisiemeCalcul = 45 / 5;
-
-    echo "Le résultat de 3 + 4 est : $premierCalcul ; le résultat de 5 x 20 est : $deuxiemeCalcul ; le résultat de 45 divisé par 5 est : $troisiemeCalcul";
+    print_r($hautsDeFrance);
     ?>
+
 
 </body>
 
