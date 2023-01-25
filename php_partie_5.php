@@ -28,9 +28,10 @@
         11 => "Novembre",
         12 => "Décembre",
     ];
-    echo $months;
+    var_dump($months);
     ?>
 
+    <br>
     <br>
 
     <?php
