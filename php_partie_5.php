@@ -28,7 +28,6 @@
         11 => "Novembre",
         12 => "Décembre",
     ];
-    var_dump($months);
     ?>
 
     <br>
@@ -47,7 +46,7 @@
     //-----------------------------------------------------
     // EXO 3
     //-----------------------------------------------------
-    $months[5];
+    echo $months[5];
     ?>
 
     <br>
@@ -81,27 +80,29 @@
     //-----------------------------------------------------
     // EXO 6
     //-----------------------------------------------------
-    echo $hautesDeFrance[59];
+    echo $hautsDeFrance[59];
     ?>
 
+    <br>
     <br>
 
     <?php
     //-----------------------------------------------------
     // EXO 7
     //-----------------------------------------------------
-    $hautsDeFrance[59] = "Reims";
-    echo $hautsDeFrance ;
+    $hautsDeFrance[51] = "Reims";
+    echo $hautsDeFrance[51] ;
     ?>
 
+<br>
 <br>
 
     <?php
     //-----------------------------------------------------
     // EXO 8
     //-----------------------------------------------------
-    foreach ($months as [$id, $mois]){
-        echo $months ;
+    foreach ($months as $key => $month){
+        echo $month." ".$key.'<br>';
     }
     ?>
 
@@ -115,12 +116,15 @@
     ?>
 
     <br>
+    <br>
 
     <?php
     //-----------------------------------------------------
     // EXO 10
     //-----------------------------------------------------
-    print_r($hautsDeFrance);
+    foreach ($hautsDeFrance as $key => $hautDeFrance){
+        echo "Le département ".$hautDeFrance." a le numéro ".$key."<br>";
+    }
     ?>
 
 
